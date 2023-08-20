@@ -2,6 +2,8 @@ cf: https://6.docs.plone.org/install/containers/examples/nginx-volto-plone.html
 
 [Japanese](README.ja.md)
 
+1. `git clone https://github.com/cutls/nginx-volto-plone`
+1. `cd nginx-volto-plone`
 1. default.sample.conf を default.conf にリネーム
 1. default.certbot.sample.conf を default.certbot.conf にリネーム
 1. default.conf や default.certbot.conf 内にある`mydomain.tld`を動かしたいドメインに置換する

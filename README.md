@@ -2,6 +2,8 @@ cf: https://6.docs.plone.org/install/containers/examples/nginx-volto-plone.html
 
 [Japanese](README.ja.md)
 
+1. `git clone https://github.com/cutls/nginx-volto-plone`
+1. `cd nginx-volto-plone`
 1. RENAME default.sample.conf to default.conf
 1. RENAME default.certbot.sample.conf to default.certbot.conf
 1. replace `mydomain.tld` to your domain in default.conf and default.certbot.conf
