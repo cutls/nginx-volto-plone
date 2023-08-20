@@ -12,6 +12,7 @@ services:
       - frontend
     ports:
     - "80:80"
+    - "443:443"
 
   frontend:
     image: plone/plone-frontend:latest
@@ -30,6 +31,8 @@ services:
       - data:/data
     ports:
     - "8080:8080"
+
+  
 
   certbot:
     image: certbot/certbot:v1.7.0
