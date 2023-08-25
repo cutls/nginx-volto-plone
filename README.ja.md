@@ -1,6 +1,8 @@
 cf: https://6.docs.plone.org/install/containers/examples/nginx-volto-plone.html
 cf: https://6.docs.plone.org/volto/deploying/apache.html
 
+`apachectl -v`でApacheのバージョンが2.4以上であることを確認してください。
+
 1. `git clone https://github.com/cutls/nginx-volto-plone`
 1. `cd nginx-volto-plone`
 1. docker-compose.sample.yml を docker-compose.yml にリネーム
