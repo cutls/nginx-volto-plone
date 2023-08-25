@@ -10,6 +10,7 @@ run `apachectl -v` to check your Apache2 is above 2.4!
 1. RENAME docker-compose.sample.yml to docker-compose.yml
 1. add `RAZZLE_API_PATH` to your domain in docker-compose.yml
 1. replace `domain.tld` to your domain in line 21, 22, 23, 17, 28, 32, 33, 34, 27, 40 of apache.conf to your domain
+   * line 32-34 is config about https. Check you have available certs on the folder(example uses Let's Encrypt)
 1. move `apache.conf` to your apache config directory(ex: `/etc/apache2/sites-available`)
 1. **This apache config file requires some modules**: `lbmethod_bybusyness` `proxy_http` `ssl` `headers`
    * `sudo a2enmod lbmethod_bybusyness proxy_http ssl headers`

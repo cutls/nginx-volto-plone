@@ -8,6 +8,7 @@ cf: https://6.docs.plone.org/volto/deploying/apache.html
 1. docker-compose.sample.yml を docker-compose.yml にリネーム
 1. docker-compose.ymlの`RAZZLE_API_PATH`を自分のドメインに編集
 1. apache.confの 21, 22, 23, 17, 28, 32, 33, 34, 27, 40行目にある`domain.tld`を自分のドメインに編集
+   * 32-34行目はhttpsに関する設定です。所定のフォルダに有効な証明書があることを確認してください。(Let's Encryptを使用した例を記載しています)
 1. `apache.conf`をApacheの構成ファイルの所定場所に置きます。(ex: `/etc/apache2/sites-available`)
 1. **必要なApacheモジュールを有効にします**: `lbmethod_bybusyness` `proxy_http` `ssl` `headers`
    * `sudo a2enmod lbmethod_bybusyness proxy_http ssl headers`
