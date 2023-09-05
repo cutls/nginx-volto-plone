@@ -6,6 +6,7 @@ services:
     environment:
       RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
       RAZZLE_API_PATH: https://domain.tld
+      RAZZLE_PROXY_REWRITE_TARGET: /VirtualHostBase/https/domain.tld:443/Plone/++api++/VirtualHostRoot
     ports:
     - "3000:3000"
     depends_on:
